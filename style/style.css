@@ -30,6 +30,8 @@ footer {
   background-color: #333;
   color: honeydew;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
@@ -55,6 +57,7 @@ footer a {
   margin: 10px;
   flex: 1 0 auto;
   text-align: center;
+  display: block;
 }
 
 footer a:hover {
