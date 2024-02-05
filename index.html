@@ -1,142 +1,381 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>Jacob Achira Obara</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-</head>
-<body class="w3-light-grey">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Racer" />
+    <link
+      rel="shortcut icon"
+      href="./WhatsApp Image 2023-08-01 at 18.44.14 (1).jpeg"
+      type="image/x-icon"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Racer</title>
+  </head>
+  <header>
+    <div class="w3-display container">
+      <div class="w3-left w3-large">
+        <a href="https://github.com/AchiraALX/racer" target="_blank">
+          <i class="bi bi-houses-fill"></i> Racer</a
+        >
+      </div>
+      <div class="w3-right">
+        <a href="/dashboard" title="Dashboard"
+          ><span class="w3-margin-right w3-border-right w3-padding h-icon"
+            ><i class="bi bi-pie-chart-fill"></i></span
+        ></a>
+        <a href="/profile" title="Profile"
+          ><span class="w3-margin-right w3-border-right w3-padding"
+            ><span class="h-icon"
+              ><i class="bi bi-person-heart"></i></span></span
+        ></a>
+        <a href="/auth/logout" title="Logout"
+          ><span class="h-icon"><i class="bi bi-box-arrow-right"></i></span
+        ></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <body>
+      <div style="margin-top: 3px; z-index: 1">
+        <!-- flashed messages -->
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+        <div id="hire">
+          <!-- Page Container -->
+          <div class="w3-content w3-margin-top" style="max-width: 1400px">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+              <!-- Left Column -->
+              <div class="w3-third">
+                <div class="w3-text-grey w3-card-4 w3-round cont">
+                  <div class="w3-display-container w3-round">
+                    <img
+                      src="./WhatsApp Image 2023-08-01 at 18.44.14 (1).jpeg"
+                      style="width: 100%"
+                      alt="Avatar"
+                      class="w3-round"
+                    />
+                    <div
+                      class="w3-display-bottomleft w3-container w3-text-black"
+                    >
+                      <h2>Jacob Achira</h2>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="w3-container description">
+                    <p>
+                      <i
+                        class="bi bi-briefcase w3-margin-right w3-large w3-text-teal"
+                      ></i
+                      >Software Engineer (Backend)
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-house w3-margin-right w3-large w3-text-teal"
+                      ></i
+                      >Nairobi, Kenya
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-envelope w3-margin-right w3-large w3-text-teal"
+                      ></i
+                      >achirajacob9@gmail.com
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-phone w3-margin-right w3-large w3-text-teal"
+                      ></i
+                      >(254) 748199786
+                    </p>
+                    <hr />
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="./WhatsApp Image 2023-08-01 at 18.44.14 (1).jpeg" style="width:100%" alt="Jacob">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jacob Achira</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
+                    <p class="w3-large">
+                      <b
+                        ><i
+                          class="bi bi-asterisk w3-margin-right w3-text-teal"
+                        ></i
+                        >Skills</b
+                      >
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Agile development
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Python (Programming)
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Rust (Programming)
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Web Development
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Database Management (SQL, NoSQL)
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Load Balancing
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Haproxy
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Nginx
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Testing
+                    </p>
+                    <p>
+                      <i class="bi bi-star-fill w3-text-brown"></i> &nbsp;
+                      &nbsp; Code Reviewing
+                    </p>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+                    <br />
+                    <hr />
+                    <br />
+
+                    <p class="w3-large w3-text-theme">
+                      <b
+                        ><i class="bi bi-globe w3-margin-right w3-text-teal"></i
+                        >Languages</b
+                      >
+                    </p>
+                    <p>English</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div
+                        class="w3-round-xlarge w3-teal w3-center"
+                        style="height: 20px; width: 100%"
+                      >
+                        C1
+                      </div>
+                    </div>
+                    <br />
+                    <p>Kiswahili</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div
+                        class="w3-round-xlarge w3-teal w3-center"
+                        style="height: 20px; width: 100%"
+                      >
+                        C2
+                      </div>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <br />
+
+                <!-- End Left Column -->
+              </div>
+
+              <!-- Right Column -->
+              <div class="w3-twothird description">
+                <div
+                  class="w3-container w3-card w3-margin-bottom w3-round cont"
+                >
+                  <!-- Projects -->
+                  <h2 class="w3-text-grey w3-padding-16">
+                    <i
+                      class="bi bi-kanban w3-margin-right w3-xxlarge w3-text-teal"
+                    ></i
+                    >Projects
+                  </h2>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <a
+                        href="https://github.com/AchiraALX/racer"
+                        target="_blank"
+                        ><b>Project 1 - Racer</b></a
+                      >
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>Dec 2023
+                    </h6>
+                    <p style="text-align: justify">
+                      Racer is a dynamic chat application tailored for
+                      businesses to seamlessly communicate and engage with their
+                      customers in real-time. This innovative solution provides
+                      a user-friendly interface and offers effortless
+                      integration, especially within websites. My commitment to
+                      enhancing customer interactions has driven the creation of
+                      a versatile tool that not only streamlines communication
+                      processes but also elevates user engagement.
+                    </p>
+                    <br />
+                  </div>
+                </div>
+
+                <div
+                  class="w3-container w3-card w3-margin-bottom w3-round cont"
+                >
+                  <h2 class="w3-text-grey w3-padding-16">
+                    <i
+                      class="bi bi-suitcase w3-margin-right w3-xxlarge w3-text-teal"
+                    ></i
+                    >Work Experience
+                  </h2>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b>Consultant - CPHRM GROUP · Contract</b>
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>Nov 2023 -
+                      Jan 2023
+                    </h6>
+                    <p style="text-align: justify">
+                      As a TPQA Data Collection Officer, I ensured high-quality
+                      data by conducting thorough household visits, utilizing
+                      digital tools for interviews, and performing visual
+                      surveys from Monday to Saturday.
+                    </p>
+                    <hr />
+                  </div>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b
+                        >Teaching Intern - Mathematics & Geography · Kenyenya
+                        SDA Secondary</b
+                      >
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>Jan 2023 -
+                      Apr 2023
+                    </h6>
+                    <p style="text-align: justify">
+                      In my teaching internship (January to April 2023), I
+                      developed crucial IT industry skills—analytical thinking,
+                      attention to detail, and data management. The experience
+                      highlighted adaptability, effective communication, and
+                      collaboration.
+                    </p>
+                    <hr />
+                  </div>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b
+                        >Data Collector - Public Service Commision · Contract</b
+                      >
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>Jun 2022 -
+                      July 2022
+                    </h6>
+                    <p style="text-align: justify">
+                      Conducted precise household surveys using digital tools,
+                      ensuring reliable data collection. Effectively
+                      communicated project goals to respondents, fostering a
+                      harmonious working relationship. Collaborated closely with
+                      supervisors, executing extensive visual surveys and
+                      maintaining an efficient data collection process.
+                    </p>
+                    <br />
+                    <hr />
+                  </div>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b
+                        >Digital Farmer Registration Enumerator - Kenya Ministry
+                        of Agriculture and Livestock Development</b
+                      >
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>Feb 2021 -
+                      Feb 2021
+                    </h6>
+                    <p style="text-align: justify">
+                      By utilizing digital systems, we efficiently registered
+                      farmers and maintained accuracy in our data collection.
+                      Our team worked seamlessly together to support farmers and
+                      ensure a streamlined data collection process. We also met
+                      project objectives and deadlines by displaying meticulous
+                      attention to detail in our data collection tasks.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="w3-container w3-card w3-round cont">
+                  <h2 class="w3-text-grey w3-padding-16">
+                    <i
+                      class="bi bi-patch-check w3-margin-right w3-xxlarge w3-text-teal"
+                    ></i
+                    >Education
+                  </h2>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b>Udacity / Agile software developer </b>
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar w3-margin-right"></i>December
+                      2023 -
+                      <span class="w3-tag w3-teal w3-round">Current</span>
+                    </h6>
+                    <p>Agile software Developer</p>
+                    <hr />
+                  </div>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b>ALX / Software Engineering</b>
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar fa-fw w3-margin-right"></i
+                      >January 2023 - January 2024
+                    </h6>
+                    <p>Nanodegree</p>
+                    <hr />
+                  </div>
+                  <div class="w3-container">
+                    <h5 class="w3-opacity">
+                      <b>Moi University / Education</b>
+                    </h5>
+                    <h6 class="w3-text-teal">
+                      <i class="bi bi-calendar fa-fw w3-margin-right"></i
+                      >September 2019 - December 2023
+                    </h6>
+                    <p>Degree</p>
+                    <br />
+                  </div>
+                </div>
+
+                <!-- End Right Column -->
+              </div>
+
+              <!-- End Grid -->
             </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <!-- End Page Container -->
           </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>The customer is very happy. They are here to be blamed for the great persecution of the present or for desertion. There are no times freed from hate and hatred, from which pain and suffering must be repelled by the right, this one.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Adipisicion will be carried out. They are here to be blamed for the great persecution of the present or for desertion. There are no times freed from hate and hatred, from which pain and suffering must be repelled by the right, this one.</p>
-          <hr>
         </div>
       </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-</body>
+    </body>
+  </main>
+  <footer>
+    <a href="https://www.linkedin.com/in/achira-jacob/" target="_blank"
+      ><i class="bi bi-linkedin"></i> LinkedIn</a
+    >
+    <a href="mailto:achirajacob9@gmail.com" target="_blank"
+      ><i class="bi bi-envelope"></i> Email</a
+    >
+    <a href="https://github.com/AchiraALX" target="_blank"
+      ><i class="bi bi-github"></i> GitHub</a
+    >
+  </footer>
 </html>
